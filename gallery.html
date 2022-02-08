@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
     <title>Document</title>
     <style>
       body section.gallery.container-fluid .gallerys-1 {
@@ -209,13 +217,13 @@
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item ">
                 <a class="nav-link" href="services.html">Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="blog.html">Blog</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="#">Gallery</a>
               </li>
               <li class="nav-item">
@@ -226,8 +234,9 @@
         </nav>
       </div>
     </section>
-    <section class="gallery container-fluid pe-4 ps-4 mt-4">
-      <div class="gallerys-1">
+    <section class="gallery container-fluid pe-4 ps-4 mt-4 mb-5">
+        <h1 class="text-center">Gallery</h1>
+      <div class="gallerys-1 mt-3">
         <div class="gallery-1-items-1">
           <img src="" />
         </div>
@@ -277,5 +286,74 @@
         </div>
       </div>
     </section>
+    <style>
+        footer ul li {
+          font-size: 14px;
+        }
+        footer h4 {
+          font-size: 18px;
+        }
+      </style>
+      <section style="box-sizing: border-box; background-color: #4d9651">
+        <footer
+          class="row m-0 p-0"
+          style="background-color: #4d9651; height: 180px"
+        >
+          <div class="col-lg-3 row align-items-center">
+            <img
+              src="Images/footer.png"
+              alt=""
+              style="width: 216px; height: 57px; margin-left: 50px"
+            />
+          </div>
+          <div class="col-lg-7 row align-items-center">
+            <div class="row">
+              <div class="col-lg-3" style="color: white">
+                <div class="title"><h4>Services</h4></div>
+                <ul>
+                  <li>Ui/Ux</li>
+                  <li>Front-End Dev</li>
+                  <li>Back-End Dev</li>
+                  <li>Fullstack Dev</li>
+                </ul>
+              </div>
+              <div class="col-lg-3" style="color: white">
+                <h4>Blog</h4>
+                <ul>
+                  <li>Program Kerja</li>
+                  <li>Pertemuan Mingguan</li>
+                </ul>
+              </div>
+              <div class="col-lg-3" style="color: white">
+                <h4>Gallery</h4>
+                <ul>
+                  <li>Foto Anggota</li>
+                  <li>Foto Kegiatan</li>
+                </ul>
+              </div>
+              <div class="col-lg-3" style="color: white">
+                <h4>About</h4>
+                <ul>
+                  <li>Susunan Kepengurusan</li>
+                  <li>Kontak</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 row align-items-center">
+            <div class="col-lg-5">
+              <img src="Images/logos.png" alt="" />
+            </div>
+            <div class="col-lg-5">
+              <img src="Images/logok.png" alt="" />
+            </div>
+          </div>
+        </footer>
+      </section>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"
+      ></script>
   </body>
 </html>
