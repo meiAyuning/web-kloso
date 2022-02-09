@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran UKM K.L.O.S.O</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" type="image/ico"/>
+  </head>
+  <body>
+    <div class="seluruh">
+      <div class="container">
+        <h1>
+          Formulir Pendaftaran <br />
+          Anggota Kloso
+        </h1>
+        <br />
+        <form action="">
+          <div class="input">
+            <label for="nama"><b>Nama Lengkap :</b></label
+            ><br />
+            <input
+              type="text"
+              name="nama"
+              id="nama"
+              placeholder="Nama Lengkap"
+              
+            />
+            <p id="warnama"></p>
+          </div>
+          <br />
+          <div class="input">
+            <label for="tahun"><b>Angkatan :</b></label
+            ><br />
+            <input
+              type="angkatan"
+              name="angkatan"
+              id="angkatan"
+              placeholder="Tahun Angkatan"
+            />
+          </div>
+          <p id="warangkatan"></p>
+          <br />
+          <div class="input">
+            <label for="jurusan"><b>Jurusan :</b></label>
+            <br />
+            <input
+              type="radio"
+              checked
+              name="jurusan"
+              value="S1 Teknik Informatika"
+            />S1 TI
+            <input
+              type="radio"
+              name="jurusan"
+              value="D3 Manajemen Informatika"
+            />D3 MI
+          </div>
+          <p id="warjurusan"></p>
+          <br />
+          <div class="input">
+            <label for="gender"><b>Jenis Kelamin :</b></label
+            ><br />
+            <input type="radio" checked name="gender" value="Laki - Laki" />Laki
+            - Laki
+            <input type="radio" name="gender" value="Perempuan" />Perempuan
+          </div>
+          <p id="wargender"></p>
+          <br />
+          <div class="input">
+            <label for="alamat"><b>Alasan Ikut UKM Kloso :</b></label>
+            <br />
+            <br />
+            <textarea
+              name="alamat"
+              cols="50"
+              rows="3"
+              id="alasan"
+              placeholder="Alasan Mengikuti Kloso"
+            ></textarea>
+          </div>
+          <p id="waralasan"></p>
+          <br />
+          <div class="input">
+            <label class="foto">Upload Foto</label><br />
+            <input type="file" id="foto" />
+            <!-- <label for="foto" class="label-foto">Pilih Foto</label> -->
+          </div>
+          <p id="warfoto"></p>
+          <div class="input">
+            <input type="submit" class="daftar" value="Daftar" />
+          </div>
+        </form>
+      </div>
+  </body>
+  <script src="script.js"></script>
+</html>

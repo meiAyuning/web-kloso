@@ -1,0 +1,73 @@
+body {
+  background-color: #007f5f;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.seluruh {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: inline-block;
+  padding: 30px;
+  margin: 50px;
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.158);
+}
+h1 {
+  margin: 0px;
+}
+.seluruh-input {
+  margin-top: 10px;
+}
+.seluruh-input label.label {
+  display: inline-block;
+  font-size: medium;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.text {
+  width: 250px;
+}
+.daftar {
+  margin-top: 30px;
+  background-color: white;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 6px;
+  font-size: small;
+  font-weight: 500;
+  color: #007f5f;
+}
+/* input[type="file"] {
+  display: none;
+} */
+.foto {
+  margin-top: 10px;
+}
+#fileFoto {
+  width: 500px;
+  padding: 30px;
+  margin: 10px;
+}
+label.label-foto {
+  display: inline-block;
+  border: 1.5px solid white;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+.seluruh-input input.text,
+textarea {
+  background-color: white;
+  border: none;
+  font-size: small;
+  padding: 10px;
+  border-radius: 6px;
+}
+p {
+  display: none;
+  color: red;
+  font-size: 10px;
+}
