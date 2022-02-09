@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Pendaftaran</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="favicon.ico" type="image/ico" />
+  </head>
+  <body>
+    <section
+      class="h-100 w-100"
+      style="box-sizing: border-box; background-color: #f5f5f5"
+    >
+      <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+        .content-3-5 .btn:focus,
+        .content-3-5 .btn:active {
+          outline: none !important;
+        }
+
+        .content-3-5 .width-left {
+          width: 0%;
+        }
+
+        .content-3-5 .width-right {
+          width: 100%;
+          height: 100%;
+          padding: 8rem 2rem;
+          background-color: #fcfdff;
+        }
+
+        .content-3-5 .centered {
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .content-3-5 .right {
+          width: 100%;
+        }
+
+        .content-3-5 .title-text {
+          font: 600 1.875rem/2.25rem Poppins, sans-serif;
+          margin-bottom: 0.75rem;
+          color: #4d9651;
+        }
+
+        .content-3-5 .caption-text {
+          font: 400 0.875rem/1.75rem Poppins, sans-serif;
+          color: #a8adb7;
+        }
+
+        .content-3-5 .input-label {
+          font: 500 1.125rem/1.75rem Poppins, sans-serif;
+          color: #4d9651;
+        }
+
+        .content-3-5 .div-input {
+          font: 300 1rem/1.5rem Poppins, sans-serif;
+          padding: 1rem 1.25rem;
+          margin-top: 0.75rem;
+          border-radius: 0.75rem;
+          border: 1px solid #4d9651;
+          color: #4d9651;
+          transition: 0.3s;
+        }
+
+        .content-3-5 .div-input:focus-within {
+          border: 1px solid #4d9651;
+          color: #2a3240;
+          transition: 0.3s;
+        }
+
+        .content-3-5 .div-input input::placeholder {
+          color: #cacbce;
+          transition: 0.3s;
+        }
+
+        .content-3-5 .div-input:focus-within input::placeholder {
+          color: #2a3240;
+          outline: none;
+          transition: 0.3s;
+        }
+
+        .content-3-5 .div-input .icon-toggle-empty-3-5 path,
+        .content-3-5 .div-input:focus-within .icon path {
+          transition: 0.3;
+          fill: #4d9651;
+          transition: 0.3s;
+        }
+
+        .content-3-5 .input-field {
+          font: 300 1rem/1.5rem Poppins, sans-serif;
+          width: 100%;
+          background-color: #fcfdff;
+          transition: 0.3s;
+        }
+
+        .content-3-5 .input-field:focus {
+          outline: none;
+          transition: 0.3s;
+        }
+
+        .content-3-5 .btn-fill {
+          font: 500 1.25rem/1.75rem Poppins, sans-serif;
+          background-image: linear-gradient(#4d9651, rgba(39, 194, 153, 1));
+          padding: 0.75rem 1rem;
+          margin-top: 2.25rem;
+          border-radius: 0.75rem;
+          transition: 0.5s;
+        }
+
+        .content-3-5 .btn-fill:hover {
+          background-image: linear-gradient(#2ec49c, #2ec49c);
+          transition: 0.5s;
+        }
+
+        .content-3-5 .bottom-caption {
+          font: 400 0.875rem/1.25rem Poppins, sans-serif;
+          margin-top: 2rem;
+          color: #2a3240;
+        }
+
+        .content-3-5 .green-bottom-caption {
+          color: #4d9651;
+          font-weight: 500;
+        }
+
+        .content-3-5 .green-bottom-caption:hover {
+          color: #4d9651;
+          cursor: pointer;
+          text-decoration: underline;
+        }
+        .judul {
+          font-size: 18px;
+          color: #4d9651;
+        }
+        @media (min-width: 576px) {
+          .content-3-5 .width-right {
+            padding: 8rem 4rem;
+          }
+
+          .content-3-5 .right {
+            width: 58.333333%;
+          }
+        }
+
+        @media (min-width: 768px) {
+          .content-3-5 .right {
+            width: 66.666667%;
+          }
+        }
+
+        @media (min-width: 992px) {
+          .content-3-5 .width-left {
+            width: 48%;
+          }
+
+          .content-3-5 .width-right {
+            width: 52%;
+          }
+
+          .content-3-5 .right {
+            width: 75%;
+          }
+        }
+
+        @media (min-width: 1200px) {
+          .content-3-5 .right {
+            width: 58.333333%;
+          }
+        }
+      </style>
+      <div
+        class="content-3-5 d-flex flex-column align-items-center h-100 flex-lg-row"
+        style="font-family: 'Poppins', sans-serif"
+      >
+        <div class="position-relative d-none d-lg-block h-100 width-left">
+          <img
+            class="position-absolute img-fluid centered"
+            src="Images/IMG_9118.JPG"
+            alt=""
+          />
+        </div>
+        <div
+          class="d-flex mx-auto align-items-left justify-content-left width-right mx-lg-0"
+        >
+          <div class="right mx-lg-0 mx-auto">
+            <div
+              class="align-items-center justify-content-center d-lg-none d-flex"
+            >
+              <img
+                class="img-fluid"
+                src="http://api.elements.buildwithangga.com/storage/files/2/assets/Empty%20State/EmptyState3/Empty-3-5.png"
+                alt=""
+              />
+            </div>
+            <h3 class="title-text text-lg-center mb-5">
+              Formulir Pendaftaran UKM K.L.O.S.O
+            </h3>
+            <form action="" method="post">
+              <div style="margin-bottom: 1.75rem">
+                <label for="" class="d-block input-label">Nama Lengkap</label>
+                <div class="d-flex w-100 div-input">
+                  <input
+                    class="input-field border-0"
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="Nama Lengkap"
+                    autocomplete="on"
+                    required
+                  />
+                </div>
+              </div>
+              <div style="margin-bottom: 1.75rem">
+                <label for="" class="d-block input-label">Angkatan</label>
+                <div class="d-flex w-100 div-input">
+                  <input
+                    class="input-field border-0"
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="Tahun Angkatan"
+                    autocomplete="on"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <h1 class="judul">Jurusan :</h1>
+                <div class="radio d-flex flex-row">
+                  <div class="form-check me-5">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="jurusan"
+                      id="jurusan1"
+                      checked
+                    />
+                    <label class="form-check-label" for="jurusan1">
+                      S1 TI
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="jurusan"
+                      id="jurusan2"
+                      checked
+                    />
+                    <label class="form-check-label" for="jurusan2">
+                      D3 MI
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <h1 class="judul">Jenis Kelamin :</h1>
+                <div class="radio d-flex flex-row">
+                  <div class="form-check me-5">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="gender1"
+                      checked
+                    />
+                    <label class="form-check-label" for="gender1">
+                      Laki -Laki
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="gender2"
+                      checked
+                    />
+                    <label class="form-check-label" for="gender2">
+                      Perempuan
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-bottom: 1.75rem">
+                <label for="" class="d-block input-label">Alasan</label>
+                <div class="d-flex w-100">
+                  <textarea
+                    class="form-control"
+                    id="alasan"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="foto" class="form-label" style="color: #4d9651"
+                  >Foto :</label
+                >
+                <input class="form-control" type="file" id="foto" />
+              </div>
+              <button
+                class="btn btn-fill text-white d-block w-50"
+                type="submit"
+              >
+                Gabung
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
